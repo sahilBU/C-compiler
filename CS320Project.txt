@@ -1,0 +1,25 @@
+Write up
+1.	We finished the parser , the interpreter and the compiler.
+2.	Our AST has two components. The first part is statements which includes all the statements such as �while Expr stmts�.
+3.	The second part is expressions which includes all the expressions such as �Plus�. In this part we have two special expressions, Call String expr and CallNoArg String. They stands for function calls and function calls with no arguments.
+4.	In our Interpreter, we have three states to take along which are function map, local variable map, output string.
+5.	Our interpreting process includes 2 steps :
+a.	Eval all functions :  going through all the functions and then initialize our function map.
+b.	Eval Main : Find our main function in the function map, and then eval the statements in the main function.
+6.	The output from our parser is a Maybe, so we extract it using a helper function.
+7.	We have write a test function in the AST interpreter named test. You could test any test using command line like : "test test1" in the AST interpreter file.
+8.	For the compiler, we passed all the test including test13 and test14.
+9.      Please use ":l CCompiler" to go to the compiler file and use enter in the format of "execute (test_compile test1)" to run tests.
+
+Ruihong Zhu, U80536639
+Xin He, U81612345
+Sahil Gupta, U76251513
+
+-----
+parser: 10/10
+compiler: 45/45
+Interpreter 40/40
+FeaturesTests: 0/5
+
+total: 95/100
+compiler_comment: thanks for the tests!
